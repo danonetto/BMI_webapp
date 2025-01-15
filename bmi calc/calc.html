@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="design.css">
+    <title>BMI</title>
+</head>
+<body>
+    <nav></nav>
+    <div class="calc">
+        <form id="adatok">
+        <label for="age">Age:</label>
+        <input type="number" id="age" min="1" max="130" required>
+        <label for="height">Height(in cm):</label>
+        <input type="number" id="height" min="50" max="300" required>
+        <label for="weight">Weight(in kg):</label>
+        <input type="number" id="weight" required>
+            <label for="male">Gender:</label><br>
+            <label for="male">M</label><input type="radio" id="male" name="gender" value="M" required>
+            <label for="female">F</label><input type="radio" id="female" name="gender" value="F">
+            <input type="submit" value="Submit"> 
+            <input type="submit" name="clear" id="clear" value="Clear">
+        </form>
+            <div id="displaybmi"></div>
+    
+     <a href="table.html">more information</a>
+    </div>
+   
+    <script src="buttons.js"></script>
+</body>
+</html>
